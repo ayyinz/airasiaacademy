@@ -25,13 +25,6 @@ df = user_input_features()
 st.subheader('User Input parameters')
 st.write(df)
 
-data = sns.load_dataset('iris')
-X = data.drop(['species'],axis=1)
-Y = data.species.copy()
-
-modelGaussianIris = GaussianNB()
-modelGaussianIris.fit(X, Y)
-
 prediction = modelGaussianIris.predict(df)
 prediction_proba = modelGaussianIris.predict_proba(df)
 
