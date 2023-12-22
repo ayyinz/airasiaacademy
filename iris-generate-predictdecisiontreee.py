@@ -33,7 +33,7 @@ prediction = modeldt.predict(df)
 prediction_proba = modeldt.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
-st.write(Y.unique())
+st.write(df.species.unique())
 
 st.subheader('Prediction')
 st.write(prediction)
