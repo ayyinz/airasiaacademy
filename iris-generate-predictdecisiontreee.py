@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 import numpy as np
-from sklearn.tree import plot_tree
+from sklearn.tree import DecisionTreeClassifier
 import pickle
 
 st.write("# Simple Iris Flower Prediction App")
