@@ -23,6 +23,7 @@ def user_input_features():
     return features
 
 df = user_input_features()
+y = df('species')
 
 st.subheader('User Input parameters')
 st.write(df)
@@ -33,7 +34,7 @@ prediction = modeldt.predict(df)
 prediction_proba = modeldt.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
-st.write(y.unique)
+st.write(y.unique())
 
 st.subheader('Prediction')
 st.write(prediction)
