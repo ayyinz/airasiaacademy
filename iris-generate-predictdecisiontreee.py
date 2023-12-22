@@ -28,13 +28,13 @@ y = df('species')
 st.subheader('User Input parameters')
 st.write(df)
 
-modeldt = pickle.load(open("irisdt5.h5", "rb")) #rb: read binary
+modeldt = pickle.load(open("irisdt6.h5", "rb")) #rb: read binary
 
 prediction = modeldt.predict(df)
 prediction_proba = modeldt.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
-st.write(y.unique())
+st.write(y_train.unique())
 
 st.subheader('Prediction')
 st.write(prediction)
