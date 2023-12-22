@@ -23,7 +23,6 @@ def user_input_features():
     return features
 
 df = user_input_features()
-y = df('species')
 
 st.subheader('User Input parameters')
 st.write(df)
