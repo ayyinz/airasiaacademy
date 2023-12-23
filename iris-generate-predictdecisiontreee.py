@@ -41,15 +41,14 @@ st.write(Y.unique())
 
 st.subheader('Prediction')
 st.write(prediction)
-st.write(prediction)
 if prediction == 0 :
-    print ('setosa')
+ st.write('setosa')
 elif prediction == 1 :
-    print('versicolor')
+ st.write('versicolor')
 elif prediction == 2 :
-    print('virginica')
+ st.write('virginica')
 else :
-    print ('enter the value correctly')
+ st.write('enter the value correctly')
         
 st.subheader('Prediction Probability')
 st.write(prediction_proba)
