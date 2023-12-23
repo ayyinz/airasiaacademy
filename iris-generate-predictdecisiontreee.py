@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 import seaborn as sns
 import numpy as np
-from sklearn.tree import DecisionTreeClassifier
+from sklearn import tree
+from sklearn.tree import plot_tree
 import pickle
 
 st.write("# Simple Iris Flower Prediction App")
@@ -33,7 +34,7 @@ prediction = modeldt.predict(df)
 prediction_proba = modeldt.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
-st.write(y_train.unique())
+st.write(y.unique())
 
 st.subheader('Prediction')
 st.write(prediction)
