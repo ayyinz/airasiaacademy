@@ -40,7 +40,8 @@ st.subheader('Class labels and their corresponding index number')
 st.write(Y.unique())
 
 st.subheader('Prediction')
-st.write()
+st.write('prediction')
+st.write('prediction')
 if prediction == 0 :
     print ('setosa')
 elif prediction == 1 :
