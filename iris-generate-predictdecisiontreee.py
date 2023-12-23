@@ -41,11 +41,11 @@ st.write(Y.unique())
 
 st.subheader('Prediction')
 st.write()
-if prediction = 0 :
+if prediction == 0 :
     print ('setosa')
-elif prediction = 1 :
+elif prediction == 1 :
     print('versicolor')
-elif prediction = 2 :
+elif prediction == 2 :
     print('virginica')
 else :
     print ('enter the value correctly')
