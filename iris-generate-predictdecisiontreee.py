@@ -37,7 +37,18 @@ prediction = modeldt.predict(df)
 prediction_proba = modeldt.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
-st.write(Y.unique(df))
+st.write(Y.unique())
 
 st.subheader('Prediction')
-st.write(prediction)
+st.write()
+    if prediction = 0 :
+       print ('setosa')
+
+    elif prediction = 1 :
+         print('versicolor')
+
+    else prediction = 2 :
+         print('virginica')
+        
+st.subheader('Prediction Probability')
+st.write(prediction_proba)
